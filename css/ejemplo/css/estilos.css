@@ -1,0 +1,39 @@
+*{
+
+    margin: 0px;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background: #EEEBD0;
+}
+
+.contenedor{
+    background: #fff;
+    max-width: 1000px;
+    margin:20px auto;
+    overflow: hidden;
+}
+
+header{
+
+    background: #EBB3A9;
+    width: 100%;
+}
+
+ header nav a{
+
+    text-decoration:none;
+    width: 100%;
+    display: inline-block;
+    padding:20px;
+    width: 200px;
+    color:black;
+    font-size:1.2em
+}
+header nav a:hover{
+
+    background: #E87EA1;
+}
