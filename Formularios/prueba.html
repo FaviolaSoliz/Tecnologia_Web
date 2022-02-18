@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <form action="gracias.html">
+
+        <input type="text" name="nombre1"
+         id="nombre1"  placeholder="Insertar nombre" 
+         value="" size="18" maxlength="8" 
+         minlength="2"
+         pattern="[A-Za-z]{3}" >
+
+         <br>
+         
+        <label for="nombre">Nombre Completo   </label>
+        <br>
+        <input type="text" name="nombre" id="nombre" placeholder="nombre completo"> 
+        <hr>
+        <input type="password" name="contraseña" placeholder="Contraseña" required>
+        <br>
+        <input type="email" placeholder="Correo" >
+        <br>
+        <input type="date" id="fecha">
+        <br>
+        <input type="month">
+        <br>
+        <input type="color" required>
+        <input type="range">
+        <input type="number">
+        <input type="search">
+        <input type="file">
+        <br>
+        <input type="radio" name="genero" value="Hombre" id="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="genero" value="Mujer" id="mujer">
+        <label for="mujer">Mujer</label>
+        <br>
+        <input type="checkbox" name="terminos" id="terminos">
+        <label for="terminos">Acepto los terminos</label>
+        <br>
+        <label for="depa">Departemento donde nacio:</label>
+        <select name="depa" id="depa">
+                <option value="cochabamba">Cochabamba</option>
+                <option value="Lapaz">La Paz</option>
+                <option value="Oruro" selected>Oruro</option>
+                <option value="Beni">Beni</option>
+
+        </select>
+        <textarea name="area" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" name="enviar" value="Enviar">
+
+
+    </form>
+    <style>
+        body{
+            background: skyblue;
+            font-size: 30px;
+        }
+    </style>
+</body>
+</html>
