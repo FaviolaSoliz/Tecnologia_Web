@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:#CCC;
+    font-size: 30px;
+    font-family: arial, sans-serif;
+}
+
+/* ** Contenedor padere** */
+
+.padre{
+
+    width:90%;
+    max-width: 800px;
+    background: #16ac54;
+}
+
+/* elementos hijos*/
+.hijo
+{
+    width: 100px;
+    height: 100px;
+    background: #f1f37f;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    font-size: 50px;
+
+}
