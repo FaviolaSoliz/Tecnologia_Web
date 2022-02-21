@@ -21,10 +21,12 @@ body {
 	flex-wrap:wrap;
 }
 
+/* Elemento hijo de contenedor*/
 header {
 	width: 100%;
 	padding: 50px 0;
 
+	/* Contenedor padre*/
 	display: flex;
 	flex-direction:row;
 	flex-wrap:wrap;
@@ -36,10 +38,11 @@ header .menu a {
 	color: #fff;
 	text-decoration: none;
 	margin-right:40px;
-	font-size: 18px;
+	font-size: 20px;
 }
 
-header .menu a:hover {text-decoration: underline;}
+header .menu a:hover 
+{text-decoration: underline;}
 
 .main {
 	background: #fff;
@@ -70,7 +73,7 @@ header .menu a:hover {text-decoration: underline;}
 
 aside {
 	width: 30%;
-	background: #537dca;
+	background: #8f6228;
 	padding: 20px;
 	display: flex;
 	flex-direction:column;
@@ -84,7 +87,7 @@ aside .ad {
 	color: #fff;
 	padding: 50px 0;
 	/*margin: 20px 0;*/
-	background: #4264a2;
+	background: #523a17;
 }
 
 footer {
@@ -121,7 +124,7 @@ footer .redes-sociales a:hover {
 	}
 
 	aside .ad {
-		width: 40%;
+		width: 20%;
 	}
 }
 
