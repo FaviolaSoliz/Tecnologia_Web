@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Break y Continue</title>
+</head>
+<body>
+	<script>
+		var amigos = ['Alejandro', 'Cesar', 'Manuel', 'Luis','Jose','Joaquin'];
+
+		// Break nos permite cortar la ejecucion de un ciclo completamente.
+		// Continue nos permite saltarnos a la siguiente ejecucion de un ciclo.
+
+		for (amigo in amigos) {
+1
+
+			//document.write(amigos[amigo] + '<br>');
+			
+			/*if (amigos[amigo] == 'Luis'){
+			break;
+			 }*/
+			 
+
+		if (amigos[amigo] == 'Cesar'){
+				continue;
+			};
+
+			document.write(amigos[amigo] + '<br>');
+		}
+
+	//	document.write('Ciclo truncado');
+
+	</script>
+
+	
+<style>
+	body{
+		font-size:50px;
+		color:blueviolet;
+	}
+</style>
+
+</body>
+</html>

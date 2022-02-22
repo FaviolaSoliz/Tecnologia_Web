@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objetos en Javascript</title>
+</head>
+<body>
+	<script>
+		// Los objetos son variables que pueden contener muchos valores.
+		// Un ojeto es similar a un arreglo.
+
+		// Los objetos pueden contener propiedades (variables), y metodos (funciones)
+
+/*		var arreglo=[1,2,2,4,6,9,34];
+		
+		var nombre = 'Fabiola';
+		var apellido='Soliz'
+		var edad = 30;
+		var pais = 'Bolivia';
+
+		document.write(nombre+' '+edad);
+
+		var nombreHermano = 'Christian';
+		var edadHermano = '17';
+		var paisHermano = 'España';
+
+		var nombrepapa='Jose'
+		var edadPapa = '50';
+		var paisPapa = 'Mexico';*/
+
+// Convirtiendo el ejemplo anterior a objetos
+/*	var fabiola = {
+			nombre: 'Fabiola Gabriela',
+			edad: 30,
+			pais: 'Bolivia',
+			// Los metodos son funciones dentro de un objeto
+		    bio: function(){
+		  	return this.nombre + ' tiene ' + this.edad + ' años'+ 'vive en: '+this.pais;
+			}
+	
+	}*/
+
+	//document.write(fabiola.bio());
+
+	/*	var persona = {
+			nombre: '',
+			edad: 0,
+			pais: '0',
+			per: function(n,ed,p)
+			{this.nombre=n;
+			this.edad=ed;
+			this.pais=p;},
+			
+			bio: function(){
+				return this.nombre + ' tiene ' + this.edad + ' años';
+			},
+			putnombre: function(nom)
+			{nombre=nom}
+
+		}*/
+
+		//persona.per('Chistian',20,'Peru');
+	//	var juan=new persona('Juan',63,'Pais')
+		//persona.putnombre('Chistian');
+
+	//	persona.per('Chistian',20,'Peru');
+
+	//   document.write(juan.bio());
+		//document.write(fabiola.nombre);
+	//	document.write(fabiola.pais);
+		
+		
+	//	document.write(christian.bio());
+
+// ----- ----- ----- ----- ----- ----- ----- ----- 
+// Usando un constructor de Objetos
+// El constructor de objetos nos permite crear objetos conforme los necesitemos.
+// En vez de escribirlos al inicio.
+
+	function persona(no, ed, pa){
+		this.nombre = no;
+		this.edad = ed;
+		this.pais = pa;
+		//return (o.nombre + ' tiene ' + o.edad + ' años'+ 'vive en: '+o.pais);
+	}
+	function imprimir(o){
+		   //var o= new persona(no,ed, pa)
+		  	document.write(o.nombre + ' tiene ' + o.edad + ' años'+ 'vive en: '+o.pais);
+			}
+
+			var persona1= new persona('Alejandro',20,'Bolivia');
+			//document.write(persona1.nombre);
+			imprimir(persona1);
+
+	var yo = new persona('Fabiola', 30, 'Bolivia');
+	//var amigo = new persona('Alex', 32, 'España');
+	//var hermano = new persona('Christopher', 32, 'Colombia');
+
+	document.write(yo.nombre+' '+yo.pais);
+	document.write('<br>');
+	document.write(amigo.nombre+ ' '+amigo.edad);
+	document.write(hermano.pais);
+
+	</script>
+
+<style>
+	body{
+		font-size:50px;
+		color:blueviolet;
+	}
+</style>
+</body>
+</html>

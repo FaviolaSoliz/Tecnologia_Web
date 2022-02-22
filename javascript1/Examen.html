@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <form action="">
+            <p>Ingrese los n primeros numeros a mostrar:</p>
+            <input id="numero1" type="text">
+            <p>los primeros n numeros son:</p>
+            <input id="resultado" type="text" readonly>
+            <input type="button" class="btn" onclick="Nnumeros()" value="Resultado">
+        </form>
+    </div>
+        <script>
+            function Nnumeros(numero1,)
+            {
+                var num1 =parseFloat(document.getElementById('numero1').value);
+                var numeroNa=[];
+                var numero=1;
+                while (num1> numeroNa)
+                {
+                    if(esPrimo(numero))
+                    {
+                        numeroNa.push(numero);
+                        numero=numero +1;
+                    }
+                    else
+                    {
+                        numero=numero +1; 
+                    }
+                }
+                
+                
+
+                document.getElementById('resultado').value=numero;
+
+            }
+        </script>
+</body>
+</html>

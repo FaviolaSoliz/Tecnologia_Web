@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones</title>
+</head>
+<body>
+	<script>
+		// Las funciones son bloques de codigo 
+		// que son utiles cuando queremos utilizar 
+		// un codigo varias veces.
+		//Las funciones nos permiten reutilizar 
+		// bloques de codigo.
+
+// ----- Estructura de una funcion
+//		function nombre(argumento1, argumento2){
+			//Codigo que ejecutaremos cada que llamemos la funcion.
+//		}
+
+// ----- Ejemplo de suma sin funcion
+/*		var numero1 = 10;
+		var numero2 = 5;
+		var resultado = numero1 + numero2;
+
+		 document.write(resultado);
+		 document.write('<br >');
+
+		numero4 = 7;
+		numero5 = 3;
+			 resultado1 = numero4 + numero5;
+
+		 document.write(resultado1);
+*/
+// ----- Funcion para sumar numeros
+/*function suma(numero1, numero2)
+	{
+			var s = numero1 + numero2;
+			document.write('La suma es:  '+s);
+		 	document.write('<br>');
+		 }
+		
+		 // LLAMAR A LA FUNCION
+
+		suma(8,10);
+
+		suma('hola ','chau');
+
+		
+		var a=10;
+		var b=15;
+		suma(a,b);
+		
+		suma(2.5,3.6);
+		//suma('Hola',' Mundo');
+*/
+// ----- Sentencia Return
+
+
+
+		function suma(numero1, numero2){
+				var resultado = numero1 + numero2;
+		return resultado; }
+
+		//var res=suma(10,5);
+		document.write('La suma es '+suma(10,10));
+
+// ----- Segunda forma de nombrar funciones
+/*		var suma = function(numero1, numero2){
+			return numero1 + numero2;
+		};
+
+		document.write(suma(8,2));*/
+
+// ----- Funciones autoinvocadas
+		// Son funciones que se ejecutan automaticamente.
+		// Muchas veces las vamos a utilizar para proteger nuestro 
+		// codigo y que codigo de terceros no acceda
+		// a nuestras variables, funciones, etc.
+		
+	/*	 (function(){
+			 //proceso
+			alert('Hola');
+		 }());
+*/
+	</script>
+
+<style>
+	body{
+		font-size:50px;
+		color:blueviolet;
+	}
+</style>
+</body>
+</html>
