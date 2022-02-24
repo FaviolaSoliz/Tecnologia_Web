@@ -13,39 +13,76 @@
 		// bloques de codigo.
 
 // ----- Estructura de una funcion
-//		function nombre(argumento1, argumento2){
+	//    function nombre(argumento1, .... , argumentoN){
 			//Codigo que ejecutaremos cada que llamemos la funcion.
 //		}
 
 // ----- Ejemplo de suma sin funcion
-/*		var numero1 = 10;
-		var numero2 = 5;
-		var resultado = numero1 + numero2;
+/*		let numero1 = 10;
+		let numero2 = 5;
+		let resultado = numero1 + numero2;
 
 		 document.write(resultado);
 		 document.write('<br >');
 
-		numero4 = 7;
-		numero5 = 3;
-			 resultado1 = numero4 + numero5;
+		var numero4 = 7;
+		var numero5 = 3;
+		var	 resultado1 = numero4 + numero5;
 
 		 document.write(resultado1);
 */
 // ----- Funcion para sumar numeros
 /*function suma(numero1, numero2)
 	{
-			var s = numero1 + numero2;
-			document.write('La suma es:  '+s);
+			let sum = numero1 + numero2;
+			document.write('La suma es:  '+sum);
 		 	document.write('<br>');
 		 }
-		
+	*/
+
+	function suma(a, b){
+
+		let res=a+b;
+		return res;
+	}
+
+	let sum=suma(5,10)
+	//document.write("la suma es: "+sum);
+
+	console.log(suma(10,10));
+
+	//alert(suma(20,100));
+
+
+	function mayor(a,b)
+	{
+		if(a>b)
+			return true
+		else
+			return false;
+	}
+
+	//document.write(mayor(10,50));
+
+	let num1= 100;
+	let num2= 50;
+	if(mayor(num1,num2))
+		document.write('El mayor es: '+num1);
+	else
+		document.write('El mayor es: '+num2);
+
+
 		 // LLAMAR A LA FUNCION
-
-		suma(8,10);
-
-		suma('hola ','chau');
-
-		
+/*
+		suma(20,10);
+		let numero1 = 10;
+		let numero2 = 5;
+		suma(numero1,numero2);
+		suma(2.5,5.6)
+		//suma('hola','chau');
+		suma(9,8);
+*/
+/*		
 		var a=10;
 		var b=15;
 		suma(a,b);
@@ -55,7 +92,7 @@
 */
 // ----- Sentencia Return
 
-
+/*
 
 		function suma(numero1, numero2){
 				var resultado = numero1 + numero2;
@@ -63,7 +100,7 @@
 
 		//var res=suma(10,5);
 		document.write('La suma es '+suma(10,10));
-
+*/
 // ----- Segunda forma de nombrar funciones
 /*		var suma = function(numero1, numero2){
 			return numero1 + numero2;
@@ -77,11 +114,11 @@
 		// codigo y que codigo de terceros no acceda
 		// a nuestras variables, funciones, etc.
 		
-	/*	 (function(){
+		 (function(){
 			 //proceso
 			alert('Hola');
 		 }());
-*/
+
 	</script>
 
 <style>

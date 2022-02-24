@@ -10,12 +10,15 @@
     <h1>Fizz buzz</h1>
     <script>
         
-        for (var i=1;i<=100; i++)
+    function FizzBuzz(N)
+    {
+        for (var i=1;i<=N; i++)
         {
             if(i%5===0 && i%3===0)
             {
                 document.write(i+'.- FIZZ BUZZ'+'<br>');
             }
+
             else{ if(i%3===0)
                 {
                     document.write(i+'.- FIZZ'+'<br>');
@@ -29,6 +32,11 @@
                 }
             }
         }
+    }
+
+    FizzBuzz(5);
+
+    FizzBuzz(20);
         
 
 
@@ -38,7 +46,7 @@
     <style>
 
         body{
-            background:tan;
+            background:rgb(166, 240, 163);
             font-size:30px;
         }
     </style>

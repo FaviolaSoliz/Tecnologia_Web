@@ -7,20 +7,30 @@
 <body>
 	<script>
 
-		var amigos = ['Carlos', 'Alejandro', 'Cesar', 'Manuel'];
+		let amigos = ['Carlos', 'Alejandro', 'Cesar', 'Manuel'];
 
 		//amigos[5]='Joaquin'
 
 	/*	amigos.unshift('Ana');
 
-        amigos.shift();
+        amigos.shift();*/
 
-		var tam=amigos.length;
+		document.write(amigos);
+		document.write("<hr>");
+		let tam =amigos.length;
+		document.write('tamaño : '+tam);
 
-		document.write(amigos.join('----'));
+		document.write("<hr>");
 
+		document.write(amigos.join(' ---- '));
+
+		document.write("<hr>");
+
+		//amigos[4]='Daniel'
+		//amigos.shift('Daniel');
+		document.write(amigos);
 		//document.write(tam);
-*/
+/*
 // ----- Metodo Length
 		// Length nos permite conocer cuantos elementos tiene un arreglo.
 		// document.write(amigos.length);
@@ -30,13 +40,15 @@
 
 	//	var cadenaAmigos = amigos.join(' ** ');
 	//	document.write(cadenaAmigos);
-
+*/
 // ----- Metodo Pop y Push
 		// Pop nos permite eliminar el ultimo elemento de un arreglo.
 		// Push nos permite agregar un elemento al final de un arreglo.
-
+		//document.write("<hr>");
 		// amigos.pop();
-	//	amigos.push('Angel');
+		// document.write(amigos);
+	 	//amigos.push('Angel');
+		//document.write(amigos);
 	//	document.write(amigos.join('**'));
 	//	console.log(amigos);
 
@@ -52,10 +64,10 @@
 
 // ----- Metodo concat
 
-		var amigos2 = ['Felipe', 'Luis'];
-
-		var todosMisAmigos = amigos.concat(amigos2);
-		document.write(todosMisAmigos.join('**'));
+	var amigos2 = ['Felipe', 'Luis'];
+		document.write("<hr>");
+		let todosMisAmigos=amigos.concat(amigos2);
+		document.write(todosMisAmigos);
 	//	document.write(todosMisAmigos);
 
 // ----- Metodo Sort y Reverse
@@ -67,9 +79,10 @@
 		
 		amigos.reverse();
 
+		document.write("<hr>");
 document.write(todosMisAmigos.join('--'));
 	//	amigos.length;
-
+	document.write("<hr>");
 	document.write(amigos);
 		console.log(amigos);
 
@@ -78,7 +91,7 @@ document.write(todosMisAmigos.join('--'));
 <style>
  
 	body{
-		font-size: 50px;
+		font-size: 40px;
 		color:blueviolet;
 	}
    

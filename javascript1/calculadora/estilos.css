@@ -8,8 +8,8 @@
 
 body {
 	font-family: Arial, Sans-serif;
-	background: #21295c;
-	color: #cf5c36;
+	background: #71c1f7;
+	color: #241b79;
 }
 
 .contenedor {
@@ -34,7 +34,7 @@ input[type="text"]{
 
 form .btn {
 	width: 100%;
-	background: #cf5c36;
+	background: #4373b1;
 	color: #fff;
 	border:none;
 	cursor: pointer;
