@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="fecha1">
+
+    </p>
+    <script>
+
+        function mostrarFecha()
+        {
+            let dia = fecha.getDate();
+            let dia_sem =fecha.getDay();
+            let mes = fecha.getMonth();
+            let año = fecha.getFullYear();
+        
+            
+            let meses=['Ene','Feb','Marzo','Abr'];
+            let semana=['Dom','Lun','Mar','Miercoles','Jue'];
+            
+            console.log("dia : "+semana[dia_sem]);
+            console.log("dia : "+dia);
+            console.log("mes : "+meses[mes]);
+            console.log("año : "+año);
+
+
+            console.log(semana[dia_sem]+' , '+ dia+' / '+meses[mes]+ ' / '+año);
+                return
+            }
+
+            let fecha =new Date();
+
+        // let parrafo = document.getElementById("fecha1");
+            document.write(fecha);
+
+            let hora= fecha.getHours();
+            let min= fecha.getMinutes();
+            let seg= fecha.getSeconds();
+
+            // HORA
+            console.log("hora : "+hora);
+            console.log("minutos : "+min);
+            console.log("segundos : "+seg);
+
+            // FECHA
+
+            let dia = fecha.getDate();
+            let dia_sem =fecha.getDay();
+            let mes = fecha.getMonth();
+            let año = fecha.getFullYear();
+        
+            
+            let meses=['Ene','Feb','Marzo','Abr'];
+            let semana=['Dom','Lun','Mar','Miercoles','Jue'];
+            
+            console.log("dia : "+semana[dia_sem]);
+            console.log("dia : "+dia);
+            console.log("mes : "+meses[mes]);
+            console.log("año : "+año);
+
+
+            console.log(semana[dia_sem]+' , '+ dia+' / '+meses[mes]+ ' / '+año);
+
+            let parrafo = document.getElementById("fecha1");
+            //document.write(fecha);
+            document.write('<hr>'+semana[dia_sem]+'/ '+ dia+' /'+meses[mes]+ ' / '+año);
+       
+    </script>
+</body>
+</html>
